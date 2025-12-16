@@ -88,9 +88,9 @@ export default function HeroSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
           </div>
-          <div className="absolute -bottom-4 -left-4 rounded-2xl border border-border bg-card p-4 shadow-lg md:-bottom-6 md:-left-6">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#40929e]/10">
+          <div className="absolute -bottom-4 -left-4 rounded-2xl border border-border bg-card px-5 py-4 shadow-lg md:-bottom-6 md:-left-6">
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#40929e]/10">
                 <span className="text-lg font-bold text-[#40929e]">99%</span>
               </div>
               <div>
