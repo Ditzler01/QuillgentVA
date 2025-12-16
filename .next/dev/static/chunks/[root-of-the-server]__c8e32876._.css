@@ -3478,6 +3478,16 @@ input[type="search"]::-webkit-search-cancel-button {
   border-color: hsl(var(--destructive) / var(--tw-border-opacity, 1));
 }
 
+.dark\:brightness-0:is(.dark *) {
+  --tw-brightness: brightness(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark\:invert:is(.dark *) {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .dark\:after\:border-white\/10:is(.dark *):after {
   content: var(--tw-content);
   border-color: #ffffff1a;

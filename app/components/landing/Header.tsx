@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -28,10 +29,17 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 md:px-8">
         <a
           href="#"
-          className="text-xl font-bold text-foreground"
+          className="flex items-center"
           data-testid="link-logo"
         >
-          <span className="text-[#40929e]">Quill</span>gent
+          <Image
+            src="/logo-light.png"
+            alt="Quillgent"
+            width={140}
+            height={40}
+            className="h-8 w-auto dark:brightness-0 dark:invert"
+            priority
+          />
         </a>
 
         <nav className="hidden items-center gap-1 md:flex">
