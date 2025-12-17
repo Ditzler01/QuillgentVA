@@ -29,17 +29,20 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 md:px-8">
         <a
           href="#"
-          className="flex items-center"
+          className="flex items-center gap-2"
           data-testid="link-logo"
         >
           <Image
             src="/logo-light.png"
             alt="Quillgent"
-            width={140}
+            width={40}
             height={40}
-            className="h-8 w-auto dark:brightness-0 dark:invert"
+            className="h-8 w-auto"
             priority
           />
+          <span className="text-xl font-bold text-foreground">
+            <span className="text-[#40929e]">Quill</span>gent
+          </span>
         </a>
 
         <nav className="hidden items-center gap-1 md:flex">
