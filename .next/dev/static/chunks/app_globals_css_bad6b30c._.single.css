@@ -66,7 +66,7 @@ html, :host {
   -webkit-text-size-adjust: 100%;
   tab-size: 4;
   line-height: 1.5;
-  font-family: Poppins, var(--font-sans);
+  font-family: var(--font-poppins), system-ui, sans-serif;
   font-feature-settings: normal;
   font-variation-settings: normal;
   -webkit-tap-highlight-color: transparent;
@@ -104,9 +104,9 @@ b, strong {
 }
 
 code, kbd, samp, pre {
-  font-family: var(--font-mono);
   font-feature-settings: normal;
   font-variation-settings: normal;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   font-size: 1em;
 }
 
@@ -268,11 +268,11 @@ img, video {
 body {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--background) / var(--tw-bg-opacity, 1));
+  font-family: var(--font-poppins), system-ui, sans-serif;
   --tw-text-opacity: 1;
   color: hsl(var(--foreground) / var(--tw-text-opacity, 1));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: var(--font-poppins), system-ui, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1782,11 +1782,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .font-mono {
-  font-family: var(--font-mono);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .font-sans {
-  font-family: Poppins, var(--font-sans);
+  font-family: var(--font-poppins), system-ui, sans-serif;
 }
 
 .text-2xl {

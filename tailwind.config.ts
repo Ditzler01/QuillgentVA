@@ -83,10 +83,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Poppins", "var(--font-sans)"],
-        serif: ["var(--font-serif)"],
-        mono: ["var(--font-mono)"],
-        poppins: ["Poppins", "sans-serif"],
+        sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
+        heading: ["var(--font-roboto)", "system-ui", "sans-serif"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
