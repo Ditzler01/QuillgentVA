@@ -90,7 +90,7 @@ export default function ServicesSection() {
                 <h3 className="mb-2 text-xl font-semibold text-foreground md:text-2xl">
                   {service.title}
                 </h3>
-                <p className="mb-4 text-muted-foreground">{service.description}</p>
+                <p className="mb-4 text-justify text-muted-foreground">{service.description}</p>
                 <span className="inline-flex items-center text-sm font-medium text-[#40929e] opacity-0 transition-opacity group-hover:opacity-100">
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
                 </span>
