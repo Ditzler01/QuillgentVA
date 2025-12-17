@@ -3455,6 +3455,10 @@ input[type="search"]::-webkit-search-cancel-button {
     flex-direction: row;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:gap-12 {
     gap: 3rem;
   }
@@ -3569,8 +3573,38 @@ input[type="search"]::-webkit-search-cancel-button {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
   .lg\:gap-16 {
     gap: 4rem;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:p-20 {
+    padding: 5rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:py-32 {
@@ -3586,6 +3620,17 @@ input[type="search"]::-webkit-search-cancel-button {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:gap-24 {
+    gap: 6rem;
+  }
+
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 

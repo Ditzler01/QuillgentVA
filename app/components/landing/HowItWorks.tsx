@@ -30,7 +30,7 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="bg-muted/30 py-16 md:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12 xl:px-16">
         <motion.div
           className="mb-12 text-center md:mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function HowItWorks() {
         <div className="relative">
           <div className="absolute left-1/2 top-16 hidden h-0.5 w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#40929e]/30 to-transparent md:block" />
 
-          <div className="grid gap-8 md:grid-cols-3 md:gap-12">
+          <div className="grid gap-8 md:grid-cols-3 md:gap-12 lg:gap-16">
             {steps.map((step, index) => (
               <motion.div
                 key={step.number}

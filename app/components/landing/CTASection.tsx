@@ -14,9 +14,9 @@ export default function CTASection() {
 
   return (
     <section id="contact" className="py-16 md:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12 xl:px-16">
         <motion.div
-          className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#40929e] to-[#2a6068] p-8 text-center md:p-16"
+          className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#40929e] to-[#2a6068] p-8 text-center md:p-16 lg:p-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

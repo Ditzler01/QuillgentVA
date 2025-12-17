@@ -13,8 +13,8 @@ const stats = [
 export default function WhyQuillgent() {
   return (
     <section id="why-us" className="py-16 md:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+      <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12 xl:px-16">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 xl:gap-24">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -33,7 +33,7 @@ export default function WhyQuillgent() {
               transforming how you work.
             </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-6">
+            <div className="mt-8 grid grid-cols-2 gap-6 lg:gap-8">
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}

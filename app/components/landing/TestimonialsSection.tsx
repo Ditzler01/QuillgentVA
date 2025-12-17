@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
 
   return (
     <section id="testimonials" className="bg-muted/30 py-16 md:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12 xl:px-16">
         <motion.div
           className="mb-12 text-center md:mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
 
-        <div className="hidden gap-6 md:grid md:grid-cols-3">
+        <div className="hidden gap-6 md:grid md:grid-cols-3 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}

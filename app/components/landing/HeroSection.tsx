@@ -30,7 +30,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-5 md:gap-8 md:px-8 md:py-24 lg:py-32">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-5 md:gap-12 md:px-8 md:py-24 lg:gap-20 lg:px-12 lg:py-32 xl:px-16">
         <motion.div
           className="flex flex-col justify-center md:col-span-3"
           initial={{ opacity: 0, y: 20 }}

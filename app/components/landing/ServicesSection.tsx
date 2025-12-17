@@ -54,7 +54,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <section id="services" className="py-16 md:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-12 xl:px-16">
         <motion.div
           className="mb-12 text-center md:mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ export default function ServicesSection() {
           </p>
         </motion.div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-10">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
