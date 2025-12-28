@@ -1086,6 +1086,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: .5rem;
 }
 
+.mt-0\.5 {
+  margin-top: .125rem;
+}
+
 .mt-1\.5 {
   margin-top: .375rem;
 }
@@ -1507,7 +1511,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
 }
 
-.shrink-0 {
+.flex-shrink-0, .shrink-0 {
   flex-shrink: 0;
 }
 
@@ -3009,6 +3013,11 @@ input[type="search"]::-webkit-search-cancel-button {
   --tw-scale-x: 1.02;
   --tw-scale-y: 1.02;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-\[\#357d87\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 125 135 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-\[\#357d88\]:hover {
