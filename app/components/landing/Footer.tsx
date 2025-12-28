@@ -11,7 +11,7 @@ const footerLinks = {
     { label: "Customer Service & Tech Support", href: "#" },
     { label: "Web Development", href: "#" },
     { label: "Graphic Design & Video Editing", href: "#" },
-    { label: "Digital Marketing & Ads", href: "#" },
+    { label: "Digital Marketing & SEO", href: "#" },
   ],
   company: [
     { label: "About Us", href: "#" },

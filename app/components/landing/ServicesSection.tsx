@@ -35,13 +35,13 @@ const services = [
     icon: Database,
     title: "Web Development",
     description:
-      "Full-stack web development expertise with Next.js, React, TypeScript, and modern frameworks to build dynamic, responsive applications.",
+      "Full-stack web development with Next.js, React, TypeScript, WordPress, and SEO expertise to build high-performing, responsive websites and applications.",
   },
   {
     icon: Share2,
-    title: "Digital Marketing & Ads",
+    title: "Digital Marketing & SEO",
     description:
-      "Strategic marketing campaigns, social media management, ads optimization, and community engagement to grow your online presence.",
+      "Strategic marketing campaigns, SEO optimization, social media management, and community engagement to boost your online visibility and rankings.",
   },
   {
     icon: Briefcase,

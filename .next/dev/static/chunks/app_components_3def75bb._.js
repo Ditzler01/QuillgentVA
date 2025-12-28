@@ -944,12 +944,12 @@ const services = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$database$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Database$3e$__["Database"],
         title: "Web Development",
-        description: "Full-stack web development expertise with Next.js, React, TypeScript, and modern frameworks to build dynamic, responsive applications."
+        description: "Full-stack web development with Next.js, React, TypeScript, WordPress, and SEO expertise to build high-performing, responsive websites and applications."
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__["Share2"],
-        title: "Digital Marketing & Ads",
-        description: "Strategic marketing campaigns, social media management, ads optimization, and community engagement to grow your online presence."
+        title: "Digital Marketing & SEO",
+        description: "Strategic marketing campaigns, SEO optimization, social media management, and community engagement to boost your online visibility and rankings."
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"],
@@ -2221,7 +2221,7 @@ const footerLinks = {
             href: "#"
         },
         {
-            label: "Digital Marketing & Ads",
+            label: "Digital Marketing & SEO",
             href: "#"
         }
     ],
