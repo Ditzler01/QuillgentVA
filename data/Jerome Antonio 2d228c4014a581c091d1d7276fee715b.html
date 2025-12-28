@@ -1,0 +1,764 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Jerome Antonio: </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2d228c40-14a5-81c0-91d1-d7276fee715b" class="page serif"><header><img class="page-cover-image" src="Jerome%20Antonio/y2ulynhix9w51.jpg" style="object-position:center 89.87%"/><h1 class="page-title" dir="auto">Jerome Antonio: </h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-817f-918b-fd9cf88804c6" class="">General Virtual Assistant / Graphic Designer/ Video Editor / Marketing Associate/ Customer Service Representative/ Real Estate Associate/ Tech Support/Ads Campaigns</h2></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81a9-8364-eaf8c359b65f" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-818e-8d81-fbaedd764ed7" style="width:56.25%" class="column"><div style="display:contents" dir="auto"><h1 id="2d228c40-14a5-8151-9a99-e6d131d23e22" class="">Hey, I&#x27;m Jerome, Your Virtual Solution Specialist!</h1></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81d5-b0f9-e7f148d39326" class="bulleted-list"><li style="list-style-type:disc">I bring over 2 years and 6 months of valuable experience as a customer service agent, specializing in Telco accounts such as Sprint and AT&amp;T. My responsibilities have encompassed technical support, sales, and collections. </li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-810e-b60e-fe13266f9e6c" class="bulleted-list"><li style="list-style-type:disc">Spent one year as a Virtual Assistant at Cubicle, a Brooklyn-based company, providing phone-based support to customers. We catered to their various internet-related needs. Here I worked for 12 hours a day 6 days a week.</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81b4-bd78-c266eb5a8ea3" class="bulleted-list"><li style="list-style-type:disc">Served as a customer service agent, graphic artist, and marketing associate at NECA Vic, an Australian-based company, for one year through Level up Outsourcing. Below are some of the projects I contributed to.</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8112-816c-d8b0a257c11b" class="bulleted-list"><li style="list-style-type:disc">Served part-time as the one responsible for managing the emails of the owner of Forsight AI.</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81dc-a59e-cb4f8d02562b" class="bulleted-list"><li style="list-style-type:disc">Worked part time for the owner of Cagezilla and Thai Championship Boxing as their graphic designer for their roster and website. Also, I managed their YouTube account and their data making sure everything is up to date.</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8145-ac19-cf7a5e524be1" class="bulleted-list"><li style="list-style-type:disc">Worked for IW Buyers Australia as their real estate associate engaging in suburb research and property shortlisting for finding the right properties to purchase for our clients. Also, created graphics for their social media marketing purposes.</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81e6-b0a2-ea83112b78d4" class="bulleted-list"><li style="list-style-type:disc">Worked as a part-time video editor for Who the Wyld Things Are as their podcast and social media reels creator (An outdoor wilderness adventure company) Pineapple Hoops as their stream and reels editor (Twitch Contents) as well as for Network Build Grow as their reels editor (A non-profit company).</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-812c-8960-ca6875cf423d" class="bulleted-list"><li style="list-style-type:disc">Worked as well for Mod Paws on their busy season, creating graphic designs for the orders placed by their customers via Etsy, Printify and Printful using Canva and BeFunky as my tools.</li></ul></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81a3-aebf-e6fdcbc06b3e" class=""><br/></p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8151-8ecb-c5b99055304d" class="">
+</p></div><div style="display:contents" dir="ltr"><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="2d228c40-14a5-81a7-92bc-f978fb51c132"><div style="font-size:1.5em"><span class="icon">💼</span></div><div style="width:100%">Want to work together? <br/><strong>📧:  </strong><strong><a href="mailto:jeromeoantonio08@gmail.com">jeromeoantonio08@gmail.com</a></strong><strong>                                     📝:  </strong><strong><a href="https://drive.google.com/file/d/1b38C15u2bi1Hv95tHq70-5xg_Q5qNuyv/view?usp=drive_link">resume</a></strong><strong><br/></strong><strong><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwjF8qCT8O-BAxVBUGwGHe5RACsQFnoECCMQAQ&amp;url=https%3A%2F%2Femojipedia.org%2Fbriefcase&amp;usg=AOvVaw1Q-tribj7mr2BX5DomLjqu&amp;opi=89978449">💼</a></strong><strong>:  </strong><strong><a href="https://www.onlinejobs.ph/jobseekers/info/1980688">online jobs profile</a></strong><strong>                                                                               : </strong><strong><a href="Jerome%20Antonio%202d228c4014a581c091d1d7276fee715b.html">email me as well through here</a></strong></div></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8117-ab33-cc6a66792ece" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8110-a037-d5ba4edd39b6" style="width:43.75%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8162-8f7d-cfbee596d731" class="image"><a href="Jerome%20Antonio/299381439_3478420435718974_6662689476163388557_n.jpg"><img style="width:672px" src="Jerome%20Antonio/299381439_3478420435718974_6662689476163388557_n.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8131-9701-f84875172ddc" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><figure id="2d228c40-14a5-8123-a837-e2b98ee5a772" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="right" columnspacing=""><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mi>I</mi><mtext>’</mtext><mi>v</mi><mi>e</mi><mtext> </mtext><mi>w</mi><mi>o</mi><mi>r</mi><mi>k</mi><mi>e</mi><mi>d</mi><mtext> </mtext><mi>f</mi><mi>o</mi><mi>r</mi><mo>:</mo></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}I’ve~worked   ~for:\end{aligned}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.5em;vertical-align:-0.5em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1em;"><span style="top:-3.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord">’</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">e</span><span class="mspace nobreak"> </span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mord mathnormal" style="margin-right:0.02778em;">or</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span><span class="mspace nobreak"> </span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.02778em;">or</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5em;"><span></span></span></span></span></span></span></span></span></span></span></span></div></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-812e-a69e-eb145a213c33" class="image"><a href="Jerome%20Antonio/Untitled_design_(13).png"><img style="width:6000px" src="Jerome%20Antonio/Untitled_design_(13).png"/></a></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="2d228c40-14a5-8172-9101-e5b7c415438d"><div style="font-size:1.5em"><span class="icon">📚</span></div><div style="width:100%">Table of Contents:<div style="display:contents" dir="auto"><hr id="2d228c40-14a5-8149-bce6-ed5bf2dafecc"/></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8195-bfd0-e1c0f8818834" class="toggle"><li><details open=""><summary>Open Me!</summary><div style="display:contents" dir="ltr"><nav id="2d228c40-14a5-81e8-afde-eabb56a7a67f" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2d228c40-14a5-817f-918b-fd9cf88804c6">General Virtual Assistant / Graphic Designer/ Video Editor / Marketing Associate/ Customer Service Representative/ Real Estate Associate/ Tech Support/Ads Campaigns</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2d228c40-14a5-8151-9a99-e6d131d23e22">Hey, I&#x27;m Jerome, Your Virtual Solution Specialist!</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2d228c40-14a5-8155-b500-ebc6b50f7fd6">Virtual Assistant Projects</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8162-9fbf-e33a8fbca88d">Sample Projects I did for NECA VIC.</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8138-9bb3-e52732233d20">                        Women&#x27;s Day</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8189-adcf-fa8aef3ce5e9">                           Company Calendar</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-816f-bf7a-d30bfc1c8828">                  Instagram Posts</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8181-a5a0-dc1b6f0bea43"></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8174-bfab-cf5016e2aa81">     IW Buyers Social Media Graphics</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8183-a416-d57ffd489449">Woman’s Day Event:</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8137-9f35-fa6f48ec5b5f">Project samples for Cagezilla and TCB:</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-81db-bbd1-d60d797b65a5">                                                                                                      Sample Videos for Who The Wyld Things Are:</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-81fb-8934-efa9217488b8">Graphic Design samples for ModPaws:</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2d228c40-14a5-8167-8c02-e974f927f620">My Skills &amp; Services:</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8169-92d2-c42ab0c322e8">Other Projects/Skills:</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-81b7-af08-ede62c863210">  </a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-8129-92c8-c0a2385e4867">  </a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2d228c40-14a5-8117-880e-f6fe92c7a398">Letter Of Recommendation &amp; Testimonies:</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2d228c40-14a5-81b8-a737-db871f3ebc6b">Benefits of an adaptable VA: <strong><a href="https://emojipedia.org/thumbs-up">👍</a></strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#2d228c40-14a5-81ed-9ef4-d516bc213a30">Email Me:</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2d228c40-14a5-81f2-8eed-daa0ddcdfc48">FAQ’s</a></div></nav></div></details></li></ul></div></div></figure></div><div style="display:contents" dir="auto"><h1 id="2d228c40-14a5-8155-b500-ebc6b50f7fd6" class="">Virtual Assistant Projects</h1></div><div style="display:contents" dir="auto"><hr id="2d228c40-14a5-8144-9d1c-ed4a69b5bf32"/></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8124-a8fb-f0c21bb5b09f" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-812b-9827-c64cb50d651d" style="width:50%" class="column"><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-8162-9fbf-e33a8fbca88d" class="">Sample Projects I did for NECA VIC.</h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81a5-8626-e17da4cae07b" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81d4-8b32-f4a307287805" class="">I managed several videos on NECA Vic&#x27;s YouTube channel, </p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-810f-a6f0-de4c84e52bf0" class="">including the one produced for the NECA Vic Awards. </p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-817d-bf65-dc44dd12c989" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8127-a3e9-e4e854a42983" class="">I utilized Premiere Pro for video editing.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-818e-8c84-ffd5fdd318df" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81a2-9572-d0ae4bccc980" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81cb-a928-f6275cc76100"><div class="source"><a href="https://youtu.be/tfQzerZmryc?si=SIrs6fdrnCYjvwrm">https://youtu.be/tfQzerZmryc?si=SIrs6fdrnCYjvwrm</a></div></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-817a-b7da-c606f31d37b4" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8182-afc1-e7533e605c2e" style="width:49.99999999999999%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8170-a9f2-fd8434645522"><div class="source"><a href="https://www.youtube.com/watch?v=ABZSvEGfhNA">https://www.youtube.com/watch?v=ABZSvEGfhNA</a></div></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-817c-babb-fd02d663b67a"><div class="source"><a href="https://youtu.be/2xM0lflXw8Y?si=NxpOe5P3f0HrkfeV">https://youtu.be/2xM0lflXw8Y?si=NxpOe5P3f0HrkfeV</a></div></figure></div></div></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-815e-bf8b-cff34cab2345" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8119-a317-fbaed29d19df" style="width:83.33333333333333%" class="column"><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-8138-9bb3-e52732233d20" class="">                        Women&#x27;s Day</h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8125-8ab7-d3f244018b1b" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81c3-81a0-ebf21edce8fa" class="image"><a href="Jerome%20Antonio/1080x1080.jpg"><img style="width:432px" src="Jerome%20Antonio/1080x1080.jpg"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-811b-ab7e-ef435bb6e6bf" style="width:100%" class="column"><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-8189-adcf-fa8aef3ce5e9" class="">                           Company Calendar</h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81bd-bb2f-c694cca15a30" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-816f-b9cc-f546865b2812" class="image"><a href="Jerome%20Antonio/calendar.png"><img style="width:528px" src="Jerome%20Antonio/calendar.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8114-bf4b-f3e5dd9b5531" style="width:100%" class="column"><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-816f-bf7a-d30bfc1c8828" class="">                  Instagram Posts</h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8124-9c7a-fb11aecb45d9" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-817d-8f7f-f2287cccefa7" class="image"><a href="Jerome%20Antonio/Transfer_of_Fair_Work_Act_Enforcement_from_the_ABCC_to_the_Fair_Work_Ombudsman.png"><img style="width:816px" src="Jerome%20Antonio/Transfer_of_Fair_Work_Act_Enforcement_from_the_ABCC_to_the_Fair_Work_Ombudsman.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81cf-b8fd-dc89d57ab2b0" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81bb-a753-ff3b4f890705" style="width:100%" class="column"><div style="display:contents" dir="auto"><p id="2d228c40-14a5-815a-b833-d343e10695a3" class="">I was in charge of crafting graphic designs for annual events such as Women&#x27;s Day, Men&#x27;s Day, and Mental Health Awareness. </p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8176-a9bf-c61a70b7d646" class="">My primary tool for creating these designs was Photoshop.</p></div><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-8181-a5a0-dc1b6f0bea43" class=""></h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-811b-beb2-e553d64d0e4b" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8113-8f35-e58cdb84105f" class="image"><a href="Jerome%20Antonio/The_Importance_Of_Property_Selection_(2).png"><img style="width:432px" src="Jerome%20Antonio/The_Importance_Of_Property_Selection_(2).png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-813a-85a6-d75a8b911916" style="width:100%" class="column"><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81b2-a5de-ec6764c405ec" class="">I designed the annual events calendar sent to our members.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8123-8195-d369dee99517" class="">To have this out come I utilize Adobe InDesign to achieve this.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81f3-b207-f0fda1035f98" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81b2-8d31-d7436d30497d" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-8174-bfab-cf5016e2aa81" class="">     IW Buyers Social Media Graphics</h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8157-848f-fbae5102ff2d" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81c5-b549-d95a9bb81163" class="image"><a href="Jerome%20Antonio/At_IW_Buyers_We_Help_You_Buy_The_Property_That_Matches_Your_Goals_(1).png"><img style="width:864px" src="Jerome%20Antonio/At_IW_Buyers_We_Help_You_Buy_The_Property_That_Matches_Your_Goals_(1).png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-817e-b260-c05f04f8dc85" style="width:100%" class="column"><div style="display:contents" dir="auto"><p id="2d228c40-14a5-812f-b795-d45fee0bea83" class="">I created weekly graphic designs for our Instagram Account posts.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81ab-9c4b-c64c64dcb07f" class="">The tools I used for these projects are: Photoshop, Illustrator and After Effects.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81b4-a6b9-d806559adfeb" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8159-a176-ded32a1316fd" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8112-8cad-efeaf6822292" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-816d-8128-c27320dc6b02" class="image"><a href="Jerome%20Antonio/IW_BUYERS_(2).png"><img style="width:432px" src="Jerome%20Antonio/IW_BUYERS_(2).png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-811e-bd84-c7b810a85ae9" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8100-a17a-c24defd29f08" style="width:100%" class="column"><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-8183-a416-d57ffd489449" class="">Woman’s Day Event:</h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8129-b932-fc5252ec7e9d" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-819a-a7b8-f56773d7db09" class="">Here is my work being used for the woman’s day event at Australia for NECA Vic company.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8115-8592-fd81232ff15a" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81aa-a3aa-c5c56184eda2" style="width:100%" class="column"><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81bc-b7d7-fafc1c422cf8" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-814d-9419-dfe56cb0af2d" class="image"><a href="Jerome%20Antonio/FB_IMG_1678422014109.jpg"><img style="width:459.65625px" src="Jerome%20Antonio/FB_IMG_1678422014109.jpg"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8136-b69c-ff5288b7bcda" class="image"><a href="Jerome%20Antonio/FB_IMG_1678422025273.jpg"><img style="width:459.65625px" src="Jerome%20Antonio/FB_IMG_1678422025273.jpg"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8108-9535-f57d457477a6" style="width:100%" class="column"><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81d2-90c9-f6340529bdef" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8185-9548-c82e924c3a5c" class="image"><a href="Jerome%20Antonio/Screenshot_2023-03-10-12-27-49-410_com.facebook.katana.jpg"><img style="width:624px" src="Jerome%20Antonio/Screenshot_2023-03-10-12-27-49-410_com.facebook.katana.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-818c-a067-c891d4a4e446" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-8137-9f35-fa6f48ec5b5f" class="">Project samples for Cagezilla and TCB:</h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-811e-b1e2-c9fd1df16313" class="">I am responsible of doing the fight banners as well as the roster images for the fighters. </p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81b8-959d-d638da6dab2e" class="">I also manage their YouTube accounts to make sure that all fights will be up to date.</p></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8140-b7eb-c0dafc745ab2" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81a2-9778-f9f7ace665dd" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-816e-b45e-c482a9039b33" class="image"><a href="Jerome%20Antonio/Lower_Thirds-TCB-37-Lozada_Vs_Magba.png"><img style="width:459.65625px" src="Jerome%20Antonio/Lower_Thirds-TCB-37-Lozada_Vs_Magba.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81a5-b6f1-d66b191e98e6" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8160-b58c-fe1bc9fafe2f" class="image"><a href="Jerome%20Antonio/Lower_Thirds-TCB-37-Medina_Vs_Bedawi.jpg"><img style="width:459.65625px" src="Jerome%20Antonio/Lower_Thirds-TCB-37-Medina_Vs_Bedawi.jpg"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81df-ab17-f75e4e77d989" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81c6-a54e-cb87d4e27f54" class="image"><a href="Jerome%20Antonio/Lower_Thirds-TCB-37-Aguilar_Vs_Johnson.jpg"><img style="width:459.65625px" src="Jerome%20Antonio/Lower_Thirds-TCB-37-Aguilar_Vs_Johnson.jpg"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8196-81fb-f11afd4bed30" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81a9-8efd-c9212998f687" class="">On Youtube I upload the fights by schedule making sure that we’ll be up to date: </p></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8112-9336-d5d3f6e9325d" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-816d-8d98-db7bac91723c" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-817e-ae99-e9bc67678ee2"><div class="source"><a href="https://youtu.be/ZHMjZALw69E?si=yL9pmdD0_4_oAqYI">https://youtu.be/ZHMjZALw69E?si=yL9pmdD0_4_oAqYI</a></div></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81cc-876f-dfe64cd02b3e"><div class="source"><a href="https://youtu.be/BMETjUnESTA?si=ece5SLPv4bUyCUOP">https://youtu.be/BMETjUnESTA?si=ece5SLPv4bUyCUOP</a></div></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81ca-ae6f-ff96d9b14e52" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8102-9ae0-e64a64e397eb" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8139-9ff6-e787320af213"><div class="source"><a href="https://youtu.be/4S34gE3ftEI?si=EDSQAfz6kaEuQ5Kt">https://youtu.be/4S34gE3ftEI?si=EDSQAfz6kaEuQ5Kt</a></div></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-813d-b3e3-dc078457ebda"><div class="source"><a href="https://youtu.be/nID9gkYJZsU?si=2rAPx_KPqgUpQq7m">https://youtu.be/nID9gkYJZsU?si=2rAPx_KPqgUpQq7m</a></div></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-811e-9758-e0c0509566ef" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8113-9b44-ea48f7a88147" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81b3-a055-fd82afa62304"><div class="source"><a href="https://youtu.be/JKubHD1Wg4Q?si=SBnVG9Au3KPtrXz0">https://youtu.be/JKubHD1Wg4Q?si=SBnVG9Au3KPtrXz0</a></div></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-815d-ab10-ff5bc39d963c"><div class="source"><a href="https://youtu.be/LC6goNH-e9o?si=rCdSt05JyHs9VTbE">https://youtu.be/LC6goNH-e9o?si=rCdSt05JyHs9VTbE</a></div></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81c4-a7d5-d831ff925d52" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8133-8e19-d5a57c381a5f" class="">Lastly, I am doing reels for Cagezilla and TCB to be uploaded by schedule as well:</p></div><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2d228c40-14a5-81ac-8f5a-c47ec4e84b8d"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><a href="https://drive.google.com/drive/folders/1pbDYs3Fi3vjU0BENBK8RP3hM1NHoEUwE">Short Fight Videos</a></div></figure></div><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-81db-bbd1-d60d797b65a5" class="">                                                                                                      Sample Videos for Who The Wyld Things Are:</h2></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81e8-981f-c9b306729ba5" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-817a-88c5-feda7520d33d" style="width:50.000000000000014%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8124-a17a-c92e67f48b3c"><div class="source"><a href="https://www.youtube.com/watch?v=DVpXkY_6XdY">https://www.youtube.com/watch?v=DVpXkY_6XdY</a></div></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81f7-96e9-c4bf346d94a5"><div class="source"><a href="https://www.youtube.com/watch?v=d3lwknKe9Tc">https://www.youtube.com/watch?v=d3lwknKe9Tc</a></div></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81f4-8968-f02658137f0b" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-811b-8551-f0ffd33db7c7"><div class="source"><a href="https://www.youtube.com/watch?v=kdz-Agfrv-8">https://www.youtube.com/watch?v=kdz-Agfrv-8</a></div></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-814d-8206-e94bf6770fc8"><div class="source"><a href="https://www.youtube.com/watch?v=TKy_ljMlHD0">https://www.youtube.com/watch?v=TKy_ljMlHD0</a></div></figure></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-81fb-8934-efa9217488b8" class="">Graphic Design samples for ModPaws:</h2></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81d2-8a8e-f0fdc9f2416e" class="">Since it’s a seasonal account, I was able to showcase my skills when it comes to editing as well for Mod Paws. Creating the designs for the orders being placed as shown:</p></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8198-ae84-ca25b2ec012f" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-815d-8b65-fc9fda8b583d" style="width:25%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8190-adcd-df66b0c498d2" class="image"><a href="Jerome%20Antonio/Front_(8).png"><img style="width:333.25px" src="Jerome%20Antonio/Front_(8).png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81b3-9e27-f99ba6573a73" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8120-ba2b-cff4441852a5" style="width:25%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8196-9a3e-dd6afa880769" class="image"><a href="Jerome%20Antonio/Front_and_Side_(2).png"><img style="width:333.25px" src="Jerome%20Antonio/Front_and_Side_(2).png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8188-89e4-f84ddc722da4" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-814a-8b84-f42cee7e29cd" style="width:25%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81d0-aa3a-fb7854d33f5e" class="image"><a href="Jerome%20Antonio/Left_(2).png"><img style="width:333.25px" src="Jerome%20Antonio/Left_(2).png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8161-ad71-e08bb88495d4" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8123-bceb-caf4cc1a6548" style="width:25%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81a0-adce-f2b497c3893a" class="image"><a href="Jerome%20Antonio/Front_(7).png"><img style="width:333.25px" src="Jerome%20Antonio/Front_(7).png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-815e-a6ae-fa2f1f48f87b" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="ltr"><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="2d228c40-14a5-81a7-bf3d-ddc1a7f4a940"><div style="font-size:1.5em"><span class="icon">📂</span></div><div style="width:100%">Other Projects : Click me! 👇 <div style="display:contents" dir="auto"><hr id="2d228c40-14a5-81e6-9f65-c494c874e526"/></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81da-b529-c2dbb885426c" class=""><a href="https://drive.google.com/drive/folders/1kH4eXmLO1xki9_I0wO5tK36bhVRXK_vz?usp=sharing">Work Projects</a></p></div></div></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81f7-b475-fd4c915cebfe" class="">
+</p></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8148-850f-fb25c07cb059" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8158-a0f3-efa4c38b708f" style="width:50%" class="column"><div style="display:contents" dir="auto"><h1 id="2d228c40-14a5-8167-8c02-e974f927f620" class="">My Skills &amp; Services:</h1></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81aa-86ea-ca131543e973" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8109-ac59-c2abbc318d1b" class="">I pride myself on being a well-rounded Virtual Assistant, drawing from my extensive experience as a customer service agent for 2 years and 6 months, and my additional 3 years as a virtual assistant. </p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8128-944c-d27fda55255d" class="">My combined experiences have equipped me with a versatile skill set that allows me to seamlessly adapt to various business requirements and deliver comprehensive support across a wide range of tasks. </p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81c4-a5b3-deec2b45c71a" class="">Whether it&#x27;s customer service, administrative assistance, project management, or any other aspect of your business, I am confident in my ability to meet and exceed your expectations.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81d1-8918-e6c829df10cd" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8131-8509-d6b5d1e915d5" style="width:50%" class="column"><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81da-9011-d3923ddb9230" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8114-9d9d-edff291068f4" class="image"><a href="Jerome%20Antonio/298099007_3478421552385529_4704051283307144304_n.jpg"><img style="width:480px" src="Jerome%20Antonio/298099007_3478421552385529_4704051283307144304_n.jpg"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8136-b515-e7811e411d8b" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-813d-8313-ce715e7e0c04" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="auto"><h3 id="2d228c40-14a5-8169-92d2-c42ab0c322e8" class="">Other Projects/Skills:</h3></div><div style="display:contents" dir="auto"><hr id="2d228c40-14a5-8111-b78c-db22dc968202"/></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-812c-8f1a-f805b865132e" class="bulleted-list"><li style="list-style-type:disc">Lead Generation</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81e4-bc17-c847acd55361" class="bulleted-list"><li style="list-style-type:disc">Email Marketing</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-816a-b79c-ede33765e6b0" class="bulleted-list"><li style="list-style-type:disc">Social Media Management</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-819f-8206-dcc15619332e" class="bulleted-list"><li style="list-style-type:disc">Email Management</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81c1-81b0-f3bf0e89764e" class="bulleted-list"><li style="list-style-type:disc">Graphic Design</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81cf-bc31-e811d72284c6" class="bulleted-list"><li style="list-style-type:disc">Real Estate </li></ul></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81af-a55e-cb0af3146bec" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81f6-81d3-c224fa29474f" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="auto"><h3 id="2d228c40-14a5-81b7-af08-ede62c863210" class="">  </h3></div><div style="display:contents" dir="auto"><hr id="2d228c40-14a5-81c2-9019-da2183bc54e4"/></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-818b-a89e-fac1d412f2b2" class="bulleted-list"><li style="list-style-type:disc">Data Analysis / Scraping</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81a9-bcc8-fe8190a871e9" class="bulleted-list"><li style="list-style-type:disc">Property Shortlisting/Research</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81a7-9247-fbd23d2f0a9e" class="bulleted-list"><li style="list-style-type:disc">Video/Photo Editing</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-816d-a9af-efb30a11d8a0" class="bulleted-list"><li style="list-style-type:disc">Calendar Management</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81a6-87bc-f12656161cbe" class="bulleted-list"><li style="list-style-type:disc">Legal Paper management</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8134-bc7f-d24167536da9" class="bulleted-list"><li style="list-style-type:disc">Customer Service</li></ul></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8124-a387-fbff7c34996f" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8171-b1c5-e1b41392cc9c" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8116-878c-d6ad5d12109f" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="auto"><h3 id="2d228c40-14a5-8129-92c8-c0a2385e4867" class="">  </h3></div><div style="display:contents" dir="auto"><hr id="2d228c40-14a5-810c-a3c0-d5e28605521f"/></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81dd-b992-f3e176045b15" class="bulleted-list"><li style="list-style-type:disc">Event Coordination</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8110-8c64-c6f63f3042fd" class="bulleted-list"><li style="list-style-type:disc">Cold Calling</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-819e-b699-d0552ccf536f" class="bulleted-list"><li style="list-style-type:disc">E-Commerce</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-817b-96e3-cad2747c3a67" class="bulleted-list"><li style="list-style-type:disc">Tech Support</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81cb-bb09-c1025972cf22" class="bulleted-list"><li style="list-style-type:disc">Promotional Campaigns</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-817a-b560-cc661e553c21" class="bulleted-list"><li style="list-style-type:disc">Animation</li></ul></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81a6-9aaf-d221a86326ee" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81cd-adbe-c725040333a3" class="">
+</p></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-815a-85e5-fe00a16ec311" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-818b-8d29-e551e0b8b6be" style="width:50%" class="column"><div style="display:contents" dir="auto"><h1 id="2d228c40-14a5-8117-880e-f6fe92c7a398" class="">Letter Of Recommendation &amp; Testimonies:</h1></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8104-a5e9-ee549ecb7644" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81d3-b2ae-e1bf544def8b" class="">Provided is an evidence of my status as an independent contractor during my tenure with NECA Victoria through my affiliation with Level Up Outsourcing Agency. </p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8127-859f-eaf1ef9eb24f" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8107-846f-d3c56fab95fe" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-811d-95ce-d3394f74c83e" class="">This partnership exemplifies my professional commitment and capacity to manage responsibilities effectively while maintaining a flexible and adaptable work style.</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-819e-aad1-dffda398877b" style="width:50%" class="column"><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8184-a94a-ebe2084e34c6" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81f4-a7cc-f3fc4dbb4a32" class="image"><a href="Jerome%20Antonio/letter.png"><img style="width:528px" src="Jerome%20Antonio/letter.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81dc-911a-d7fe016863ce" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8150-91d6-cf0224fa5c8c" class="image"><a href="Jerome%20Antonio/proof.png"><img style="width:960px" src="Jerome%20Antonio/proof.png"/></a></figure></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8162-8e8e-ce88affcd158" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8117-ace2-dab109ef3d18" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81b5-8742-f630d67681c7" class="image"><a href="Jerome%20Antonio/2023-11-23_05-06-23.png"><img style="width:459.65625px" src="Jerome%20Antonio/2023-11-23_05-06-23.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81d9-82bc-d5892529abe4" class="image"><a href="Jerome%20Antonio/image.png"><img style="width:432px" src="Jerome%20Antonio/image.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8100-8f20-ee2974ce9216" class="image"><a href="Jerome%20Antonio/2024-01-25_00-38-31.png"><img style="width:348.8203125px" src="Jerome%20Antonio/2024-01-25_00-38-31.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8149-9a71-e5c5465e5c52" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8154-83ab-cf3b31bf7fb5" class="image"><a href="Jerome%20Antonio/Praise_11-21.png"><img style="width:459.65625px" src="Jerome%20Antonio/Praise_11-21.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81d1-9120-cc735974b239" class="image"><a href="Jerome%20Antonio/image_(2).png"><img style="width:528px" src="Jerome%20Antonio/image_(2).png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81c3-88b6-eca2e691dbc0" class="image"><a href="Jerome%20Antonio/2024-01-25_00-37-11.png"><img style="width:426.9140625px" src="Jerome%20Antonio/2024-01-25_00-37-11.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-819f-9418-ddb637d0366c" class="image"><a href="Jerome%20Antonio/2024-01-25_00-42-06.png"><img style="width:305.90625px" src="Jerome%20Antonio/2024-01-25_00-42-06.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81d7-a5e5-d5e1494dad8b" class="image"><a href="Jerome%20Antonio/2024-01-25_00-42-26.png"><img style="width:459.65625px" src="Jerome%20Antonio/2024-01-25_00-42-26.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81eb-8d71-df1641381cb1" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8186-a0c0-f4617ea193b5" style="width:33.33333333333333%" class="column"><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8134-bd4a-c0193b3a3fe9" class="image"><a href="Jerome%20Antonio/2023-11-23_05-07-13.png"><img style="width:459.65625px" src="Jerome%20Antonio/2023-11-23_05-07-13.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8167-b6cb-c5c04ee72bee" class="image"><a href="Jerome%20Antonio/2024-01-25_00-35-03.png"><img style="width:459.65625px" src="Jerome%20Antonio/2024-01-25_00-35-03.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-81ff-a5f0-c5410fc18d0f" class="image"><a href="Jerome%20Antonio/2024-01-25_00-37-57.png"><img style="width:459.65625px" src="Jerome%20Antonio/2024-01-25_00-37-57.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81d1-b8f9-f70088118157" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><h1 id="2d228c40-14a5-81b8-a737-db871f3ebc6b" class="">Benefits of an adaptable VA: <strong><a href="https://emojipedia.org/thumbs-up">👍</a></strong></h1></div><div style="display:contents" dir="auto"><hr id="2d228c40-14a5-819f-9deb-c19a788aa29c"/></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-816e-b485-d66720019e9c" class="column-list"><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81f3-bf84-f294eab463be" style="width:100%" class="column"><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-81b4-a19b-f0b786c167cb" class="numbered-list" start="1"><li><strong>Versatility</strong>: An adaptable virtual assistant can handle a wide range of tasks, from administrative work to creative projects, customer service, and more. This versatility can help streamline your operations and reduce the need to hire multiple specialists.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-817c-98fd-f23b4238fdbd" class="numbered-list" start="2"><li><strong>Cost-Efficiency</strong>: Instead of employing specialists for each specific task, an adaptable virtual assistant can perform multiple roles, reducing your overall labor costs.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-8101-8cc3-cbaad5d3bd0b" class="numbered-list" start="3"><li><strong>Time Savings</strong>: You won&#x27;t need to spend time training and onboarding different specialists. An adaptable virtual assistant is already equipped with a diverse skill set and can start working on tasks immediately.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-8185-ae54-dffa66e77ef4" class="numbered-list" start="4"><li><strong>Flexibility</strong>: They can adjust to changing workloads and priorities, ensuring that your business remains agile and responsive to market fluctuations.</li></ol></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81fe-8a5e-de01255331f4" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-8125-a11f-f238e731f31e" style="width:100%" class="column"><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-8122-af11-e835c685754a" class="numbered-list" start="5"><li><strong>No Overhead Costs</strong>: Independent virtual assistants typically work remotely, eliminating the need for physical office space and related overhead costs.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-81ce-9ea2-c5040e5af6a5" class="numbered-list" start="6"><li><strong>Scalability</strong>: You can easily scale your virtual assistant&#x27;s workload up or down as your business evolves, without the complexities of hiring or firing employees.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-8178-909b-e95240ca3811" class="numbered-list" start="7"><li><strong>Reduced Management</strong>: An adaptable virtual assistant often requires less management, as they are self-sufficient and capable of handling tasks independently.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-810e-924f-e0400479886a" class="numbered-list" start="8"><li><strong>Global Talent Pool</strong>: You can tap into a global talent pool and find a virtual assistant with the specific skills and expertise you need, regardless of their physical location.</li></ol></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8173-8c9e-f732f6d1ba10" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-815a-a828-e1aa87cb5492" style="width:100%" class="column"><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-81e1-8f17-fab0681da28d" class="numbered-list" start="9"><li><strong>Increased Productivity</strong>: Their adaptability means they can switch between different tasks efficiently, which can enhance overall productivity.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-81ee-8ece-c6d5e729222c" class="numbered-list" start="10"><li><strong>Focus on Core Activities</strong>: With a capable virtual assistant handling various tasks, you can focus more on strategic and core activities that drive business growth.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-814d-b1b8-cef3c98b1bdc" class="numbered-list" start="11"><li><strong>Consistency</strong>: An adaptable virtual assistant can provide consistent support across different aspects of your business, ensuring quality and continuity in your operations.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-810a-9217-ef83f58aa725" class="numbered-list" start="12"><li><strong>Problem Solving</strong>: They can effectively troubleshoot issues and find creative solutions, as their adaptability allows them to approach problems from various angles.</li></ol></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8122-a88e-fbb52d69dad1" class="">
+</p></div></div></div><div style="display:contents" dir="auto"><div id="2d228c40-14a5-81e7-afcd-de5e9566317f" style="width:100%" class="column"><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-8160-9411-f4dc7dad1c98" class="numbered-list" start="13"><li><strong>Diverse Skill Set</strong>: An adaptable virtual assistant may have a broad range of skills, potentially bringing fresh ideas and insights to your business.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-817e-b74a-d4e9353effe3" class="numbered-list" start="14"><li><strong>Improved Work-Life Balance</strong>: By outsourcing tasks to an adaptable virtual assistant, you can reduce your own workload and enjoy a better work-life balance.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2d228c40-14a5-8124-9a90-c35049e8adb4" class="numbered-list" start="15"><li><strong>Cost-Effective Learning</strong>: As they adapt to new tasks, they can often quickly acquire new skills, saving you time and money on training.</li></ol></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-818d-bb34-eaf9141833c2" class="">
+</p></div></div></div></div></div><div style="display:contents" dir="auto"><hr id="2d228c40-14a5-81b6-bca4-fe515369b4fb"/></div><div style="display:contents" dir="auto"><h2 id="2d228c40-14a5-81ed-9ef4-d516bc213a30" class="">Email Me:</h2></div><div style="display:contents" dir="ltr"><figure id="2d228c40-14a5-8194-a639-e471f5a01f50"><div class="source"><a href="https://tally.so/r/n08jd0">https://tally.so/r/n08jd0</a></div></figure></div><div style="display:contents" dir="auto"><h1 id="2d228c40-14a5-81f2-8eed-daa0ddcdfc48" class="">FAQ’s</h1></div><div style="display:contents" dir="auto"><hr id="2d228c40-14a5-8158-920d-d5852dbb663e"/></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81f1-8aa9-fac63fb245ff" class="toggle"><li><details open=""><summary>What tools do you use for editing?</summary><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81b4-8356-eec8fe4ca473" class="bulleted-list"><li style="list-style-type:disc">Photoshop</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81de-b4db-c711bab975fb" class="bulleted-list"><li style="list-style-type:disc">Premiere Pro</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-810f-afc4-cedf6215aa32" class="bulleted-list"><li style="list-style-type:disc">Adobe In design</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8136-88de-faac4331feb7" class="bulleted-list"><li style="list-style-type:disc">Adobe Illustrator</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81c4-8c94-ed40264c3739" class="bulleted-list"><li style="list-style-type:disc">Canva</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81f1-90ea-c0a4aa8e9ed0" class="bulleted-list"><li style="list-style-type:disc">Lightroom</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8114-9c47-f0f60c3fc5ee" class="bulleted-list"><li style="list-style-type:disc">After Effects</li></ul></div></details></li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8177-b12a-ce1a363f29b4" class="toggle"><li><details open=""><summary>What other software or tools you know using?</summary><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8140-b6d1-eb1308e94b7b" class="bulleted-list"><li style="list-style-type:disc">Higher Logic</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8147-98ce-d2dbf667e41b" class="bulleted-list"><li style="list-style-type:disc">Hubspot</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-819b-b55f-c4f19de992e7" class="bulleted-list"><li style="list-style-type:disc">Imis</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-814f-a0d2-f1c09a6cf016" class="bulleted-list"><li style="list-style-type:disc">Asana</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8135-99ec-fe5d8ac34aac" class="bulleted-list"><li style="list-style-type:disc">Slack</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81e9-934a-f098f64ebd6a" class="bulleted-list"><li style="list-style-type:disc">Microsoft Teams</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-81da-8a12-dc3d01e74d29" class="bulleted-list"><li style="list-style-type:disc">Microsoft Office (Excel, Word, Power Point)</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8136-a305-d97930b9b0f6" class="bulleted-list"><li style="list-style-type:disc">Salesforce</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8166-ad7f-ee6ff3bc9775" class="bulleted-list"><li style="list-style-type:disc">3CX</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8103-869d-daa62c003855" class="bulleted-list"><li style="list-style-type:disc">Adobe Campaign Developer</li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-812b-b927-f91ce7b9e7ef" class="bulleted-list"><li style="list-style-type:disc">Google Analytics</li></ul></div></details></li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8129-be63-ec9ae58b57b4" class="toggle"><li><details open=""><summary>What amount of working hours &amp; timeframe do you prefer?</summary><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81b8-b3b2-d571fcb63be1" class="">I am open to both part-time and full-time opportunities, and my primary focus is contributing to the company&#x27;s growth.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8140-964b-f9c41869f9a8" class="">I have experience working long hours, as evidenced by my previous commitment of 12 hours a day, six days a week for a single client.</p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8110-b3dd-caba355b2591" class="">I am flexible regarding working hours and can accommodate morning or graveyard shifts as per the company&#x27;s needs.</p></div></details></li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8169-b119-f816f5e2967f" class="toggle"><li><details open=""><summary>Are you comfortable in using softphone?</summary><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81f8-b23f-d20ee150d060" class="">Yes, I&#x27;ve been immersed in this type of work for the past few years, so I&#x27;m well-acquainted with it. </p></div><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8179-a456-efbd267aa8fe" class="">However, I&#x27;m equally adept at non-voice tasks, as I&#x27;ve previously handled projects that didn&#x27;t require phone communication.</p></div></details></li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8171-8f4e-e330ca5bfcfc" class="toggle"><li><details open=""><summary>Are you open for training?</summary><div style="display:contents" dir="auto"><p id="2d228c40-14a5-8128-8972-dc9595e782e4" class="">Certainly, I thrive on training and continuous improvement. However, if you require my services immediately, I am also capable of swift adaptation, as many of the skills I possess are self-taught, allowing me to hit the ground running when needed.</p></div></details></li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8168-9bb1-fae1868d22fd" class="toggle"><li><details open=""><summary>What is your desired rate?</summary><div style="display:contents" dir="auto"><p id="2d228c40-14a5-81d8-a597-d565e4f0bd83" class="">Considering the skills and value I can contribute, I believe that a rate in the range of $6 to $10 per hour would be mutually beneficial and satisfactory for both parties.</p></div></details></li></ul></div><div style="display:contents" dir="auto"><ul id="2d228c40-14a5-8196-ac4d-ec2a43288c3b" class="toggle"><li><details open=""><summary>How soon can you start?</summary><div style="display:contents" dir="auto"><p id="2d228c40-14a5-817b-aa1f-fc7949b41817" class="">As soon as possible.</p></div></details></li></ul></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
