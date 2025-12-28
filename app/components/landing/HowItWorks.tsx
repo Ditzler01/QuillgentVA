@@ -9,21 +9,21 @@ const steps = [
     icon: MessageSquare,
     title: "Consultation",
     description:
-      "Share your needs and challenges. We listen carefully to understand your business requirements.",
+      "Share your needs and challenges. Whether it's customer service, web development, or marketing, we understand your requirements.",
   },
   {
     number: "02",
     icon: UserCheck,
     title: "Match & Onboard",
     description:
-      "We pair you with a vetted VA perfectly suited to your industry and working style.",
+      "We assign the right specialist from our team with expertise in your specific needs, from tech support to creative design.",
   },
   {
     number: "03",
     icon: Rocket,
     title: "Deliver Excellence",
     description:
-      "Your VA integrates seamlessly into your workflow, delivering results from day one.",
+      "Our team integrates seamlessly into your workflow, leveraging years of experience to deliver results from day one.",
   },
 ];
 

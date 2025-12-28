@@ -45,9 +45,9 @@ export default function HeroSection() {
             <span className="text-[#40929e]">We Handle the Rest</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            Quillgent connects you with elite virtual assistants who become
-            seamless extensions of your team. Scale your business without the
-            overhead.
+            Quillgent brings together experienced professionals in customer service, 
+            web development, graphic design, and digital marketing to become 
+            seamless extensions of your team.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button

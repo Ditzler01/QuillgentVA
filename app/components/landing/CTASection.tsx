@@ -32,8 +32,8 @@ export default function CTASection() {
               Ready to Scale Your Business?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90 md:text-xl">
-              Join 500+ businesses that have transformed their operations with
-              Quillgent. Get started today with a free consultation.
+              Work with experienced professionals who bring years of expertise in 
+              customer service, development, and creative services. Get started today with a free consultation.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button

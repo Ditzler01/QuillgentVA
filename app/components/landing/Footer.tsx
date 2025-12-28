@@ -8,10 +8,10 @@ import { toast } from "@/hooks/use-toast";
 
 const footerLinks = {
   services: [
-    { label: "Administrative Support", href: "#" },
-    { label: "Customer Service", href: "#" },
-    { label: "Content Management", href: "#" },
-    { label: "Executive Assistance", href: "#" },
+    { label: "Customer Service & Tech Support", href: "#" },
+    { label: "Web Development", href: "#" },
+    { label: "Graphic Design & Video Editing", href: "#" },
+    { label: "Digital Marketing & Ads", href: "#" },
   ],
   company: [
     { label: "About Us", href: "#" },
@@ -79,8 +79,8 @@ export default function Footer() {
               <span className="text-[#40929e]">Quill</span>gent
             </a>
             <p className="mt-4 max-w-sm text-muted-foreground">
-              Premium virtual assistant services to help scale your business.
-              Focus on growth, we handle the rest.
+              Expert virtual assistance, web development, and creative services 
+              to help scale your business. Focus on growth, we handle the rest.
             </p>
 
             <form onSubmit={handleSubscribe} className="mt-6 flex gap-2">

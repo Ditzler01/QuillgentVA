@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const stats = [
-  { value: "10+", label: "Years Experience", description: "Delivering excellence in virtual assistance" },
-  { value: "500+", label: "Happy Clients", description: "Businesses transformed worldwide" },
-  { value: "98%", label: "Client Retention", description: "Our clients stay because results speak" },
-  { value: "50+", label: "Expert VAs", description: "Trained professionals at your service" },
+  { value: "5+", label: "Years Experience", description: "Combined expertise in virtual assistance and development" },
+  { value: "100+", label: "Projects Completed", description: "Successful deliveries across industries" },
+  { value: "99%", label: "Client Satisfaction", description: "Our clients stay because results speak" },
+  { value: "15+", label: "Core Skills", description: "From customer service to full-stack development" },
 ];
 
 export default function WhyQuillgent() {

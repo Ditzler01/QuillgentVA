@@ -17,37 +17,37 @@ const services = [
     icon: FileText,
     title: "Administrative Support",
     description:
-      "Email management, scheduling, document preparation, and day-to-day operational tasks handled with precision.",
+      "Email management, scheduling, document preparation, and day-to-day operational tasks handled with precision by experienced virtual assistants.",
   },
   {
     icon: Headphones,
-    title: "Customer Service",
+    title: "Customer Service & Tech Support",
     description:
-      "Professional handling of customer inquiries, support tickets, and maintaining excellent client relationships.",
+      "Over 2 years of experience handling customer inquiries, technical support for Telco accounts, sales, and collections with professional excellence.",
   },
   {
     icon: PenTool,
-    title: "Content Management",
+    title: "Graphic Design & Video Editing",
     description:
-      "Blog posts, website updates, content scheduling, and maintaining your digital presence seamlessly.",
+      "Creative content production including graphic design, video editing, and marketing materials that elevate your brand presence.",
   },
   {
     icon: Database,
-    title: "Data Entry & Research",
+    title: "Web Development",
     description:
-      "Accurate data entry, market research, competitor analysis, and comprehensive reporting.",
+      "Full-stack web development expertise with Next.js, React, TypeScript, and modern frameworks to build dynamic, responsive applications.",
   },
   {
     icon: Share2,
-    title: "Social Media Management",
+    title: "Digital Marketing & Ads",
     description:
-      "Strategic content creation, scheduling, community engagement, and analytics tracking.",
+      "Strategic marketing campaigns, social media management, ads optimization, and community engagement to grow your online presence.",
   },
   {
     icon: Briefcase,
-    title: "Executive Assistance",
+    title: "Real Estate & Sales Support",
     description:
-      "High-level support for executives including travel coordination, meeting prep, and strategic planning.",
+      "Specialized support for real estate operations, sales processes, lead management, and client relationship building.",
   },
 ];
 
