@@ -72,7 +72,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border bg-muted/30">
-      <div className="mx-auto max-w-7xl px-6 py-12 md:px-8 md:py-16 lg:px-12 lg:py-20 xl:px-16">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:px-8 md:py-16 lg:px-8 lg:py-20 xl:px-8">
         <div className="grid gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-5 lg:gap-12">
           <div className="lg:col-span-2">
             <a href="#" className="text-xl font-bold text-foreground">
