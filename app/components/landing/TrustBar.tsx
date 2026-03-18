@@ -10,9 +10,10 @@ const stats = [
   { icon: Shield, value: "100%", label: "Data Security" },
 ];
 
-export default function TrustBar() {
+export default function TrustBar()
+{
   return (
-    <section className="border-y border-border/50 bg-muted/30 py-12">
+    <section className="border-y border-border/50 bg-muted/30 py-12 mt-4">
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <motion.div
           className="grid grid-cols-2 gap-8 md:grid-cols-4"

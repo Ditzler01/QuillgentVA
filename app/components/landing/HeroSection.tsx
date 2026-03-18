@@ -5,16 +5,19 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import Image from "next/image";
 
-export default function HeroSection() {
-  const scrollToSection = (href: string) => {
+export default function HeroSection()
+{
+  const scrollToSection = (href: string) =>
+  {
     const element = document.querySelector(href);
-    if (element) {
+    if (element)
+    {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section className="relative min-h-[90vh] overflow-hidden">
+    <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <div
           className="absolute right-0 top-0 h-[600px] w-[600px] rounded-full opacity-10"
@@ -30,24 +33,25 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-5 md:gap-12 md:px-8 md:py-24 lg:gap-20 lg:px-8 lg:py-32 xl:px-8">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-5 md:gap-12 md:px-8 md:py-24 lg:gap-20 lg:px-8 lg:py-32 xl:px-8">
         <motion.div
-          className="flex flex-col justify-center md:col-span-3"
+          className="flex flex-col justify-center lg:col-span-3"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
         >
           <span className="mb-4 inline-flex w-fit items-center rounded-full bg-[#40929e]/10 px-4 py-1.5 text-sm font-medium text-[#40929e]">
-            Premium Virtual Assistant Services
+            {/* Premium Virtual Assistant Services */}
+            Build better. Operate smarter. Grow faster.
           </span>
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            Focus on Growth,{" "}
-            <span className="text-[#40929e]">We Handle the Rest</span>
+            Build Your Online Presence,{" "}
+            <span className="text-[#40929e]">Scale Your Business.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-            Quillgent brings together experienced professionals in customer service, 
-            web development, graphic design, and digital marketing to become 
-            seamless extensions of your team.
+            We are a team of experienced digital professionals helping businesses grow online.
+            From website development to daily operational support,
+            we provide the expertise you need to move faster without building an in-house team.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button
@@ -73,29 +77,28 @@ export default function HeroSection() {
         </motion.div>
 
         <motion.div
-          className="relative md:col-span-2"
+          className="relative lg:col-span-2"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl">
+          <div className="relative aspect-[4/3] rounded-3xl shadow-2xl">
             <Image
               src="/images/hero.png"
               alt="Professional virtual assistant at work"
               fill
-              className="object-cover"
+              className="object-cover rounded-3xl"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-          </div>
-          <div className="absolute -bottom-4 -left-4 rounded-2xl border border-border bg-card px-5 py-4 shadow-lg md:-bottom-6 md:-left-6">
-            <div className="flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#40929e]/10">
-                <span className="text-lg font-bold text-[#40929e]">99%</span>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-foreground">Client Satisfaction</p>
-                <p className="text-xs text-muted-foreground">Based on 500+ reviews</p>
+            <div className="absolute -bottom-10 -left-4 rounded-2xl border border-border bg-card px-5 py-4 shadow-lg md:-bottom-10 lg:-left-10">
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#40929e]/10">
+                  <span className="text-sm font-bold text-[#40929e]">100%</span>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-foreground">Client Satisfaction</p>
+                  <p className="text-xs text-muted-foreground">Based on 500+ reviews</p>
+                </div>
               </div>
             </div>
           </div>

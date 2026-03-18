@@ -11,45 +11,66 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Quillgent transformed our operations. Our VA handles everything from scheduling to client communications, freeing me to focus on strategy. It's like having a superstar team member without the overhead.",
-    name: "Sarah Mitchell",
-    role: "CEO, TechStart Inc.",
+      "Working with the team was a great experience. The training spreadsheets and systems they created were exactly what we needed. Everything was organized clearly and delivered on time. Their attention to detail and ability to understand our workflow made the process smooth and efficient.",
+    name: "Jeff Salisbury",
+    role: "Business Owner",
     avatar: "/images/avatar1.png",
     rating: 5,
   },
   {
     id: 2,
     quote:
-      "The onboarding was seamless, and our VA became productive within days. The quality of work and attention to detail exceeded our expectations. Highly recommend for any growing business.",
-    name: "James Richardson",
-    role: "Founder, GrowthLabs",
+      "The support I received was fantastic. The team handled everything professionally and delivered high-quality work quickly. Communication was excellent throughout the process and I truly appreciated their reliability.",
+    name: "Deborah Hemingway",
+    role: "Entrepreneur",
     avatar: "/images/avatar2.png",
     rating: 5,
   },
   {
     id: 3,
     quote:
-      "We've tried other VA services before, but Quillgent is on another level. The matching process ensured we got someone who truly understands our industry and workflow.",
-    name: "Emily Chen",
-    role: "COO, Innovate Digital",
+      "Great experience working with this team. They delivered exactly what I asked for and even improved the details along the way. The designs, animations, and overall execution were impressive. I would definitely recommend them to anyone looking for skilled professionals.",
+    name: "Manesh Ram",
+    role: "Business Owner",
+    avatar: "/images/avatar3.png",
+    rating: 5,
+  },
+  {
+    id: 4,
+    quote:
+      "They did an excellent job helping manage and organize important tasks for my business. Communication was clear and the results exceeded expectations. I look forward to continuing to work together on future projects.",
+    name: "Ariel Applbaum",
+    role: "Entrepreneur",
+    avatar: "/images/avatar3.png",
+    rating: 5,
+  },
+  {
+    id: 5,
+    quote:
+      "Working with this team was an absolute pleasure. Their efficiency, creativity, and productivity consistently exceeded expectations. Every task was completed on time with exceptional quality. They were a reliable asset to our team and contributed valuable ideas throughout our collaboration.",
+    name: "George Marwieh",
+    role: "Manager, MSaaS Agency",
     avatar: "/images/avatar3.png",
     rating: 5,
   },
 ];
 
-export default function TestimonialsSection() {
+export default function TestimonialsSection()
+{
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const next = () => {
+  const next = () =>
+  {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
 
-  const prev = () => {
+  const prev = () =>
+  {
     setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
   return (
-    <section id="testimonials" className="bg-muted/30 py-16 md:py-24 lg:py-32">
+    <section id="testimonials" className="py-16 md:py-24 lg:py-32 bg-muted/30">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-8 xl:px-8">
         <motion.div
           className="mb-12 text-center md:mb-16"
@@ -70,7 +91,7 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
 
-        <div className="hidden gap-6 md:grid md:grid-cols-3 lg:gap-8">
+        <div className="hidden gap-6 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
@@ -92,14 +113,14 @@ export default function TestimonialsSection() {
                   &quot;{testimonial.quote}&quot;
                 </blockquote>
                 <div className="flex items-center gap-3">
-                  <div className="relative h-12 w-12 overflow-hidden rounded-full">
+                  {/* <div className="relative h-12 w-12 overflow-hidden rounded-full">
                     <Image
                       src={testimonial.avatar}
                       alt={testimonial.name}
                       fill
                       className="object-cover"
                     />
-                  </div>
+                  </div> */}
                   <div>
                     <p className="font-semibold text-foreground">{testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
@@ -110,7 +131,7 @@ export default function TestimonialsSection() {
           ))}
         </div>
 
-        <div className="relative md:hidden">
+        <div className="relative lg:hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -132,14 +153,14 @@ export default function TestimonialsSection() {
                   &quot;{testimonials[currentIndex].quote}&quot;
                 </blockquote>
                 <div className="flex items-center gap-3">
-                  <div className="relative h-12 w-12 overflow-hidden rounded-full">
+                  {/* <div className="relative h-12 w-12 overflow-hidden rounded-full">
                     <Image
                       src={testimonials[currentIndex].avatar}
                       alt={testimonials[currentIndex].name}
                       fill
                       className="object-cover"
                     />
-                  </div>
+                  </div> */}
                   <div>
                     <p className="font-semibold text-foreground">
                       {testimonials[currentIndex].name}
@@ -166,9 +187,8 @@ export default function TestimonialsSection() {
               {testimonials.map((_, index) => (
                 <button
                   key={index}
-                  className={`h-2 w-2 rounded-full transition-colors ${
-                    index === currentIndex ? "bg-[#40929e]" : "bg-muted-foreground/30"
-                  }`}
+                  className={`h-2 w-2 rounded-full transition-colors ${index === currentIndex ? "bg-[#40929e]" : "bg-muted-foreground/30"
+                    }`}
                   onClick={() => setCurrentIndex(index)}
                   data-testid={`button-testimonial-dot-${index}`}
                 />

@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-export default function CTASection() {
-  const scrollToSection = (href: string) => {
+export default function CTASection()
+{
+  const scrollToSection = (href: string) =>
+  {
     const element = document.querySelector(href);
-    if (element) {
+    if (element)
+    {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -29,11 +32,10 @@ export default function CTASection() {
 
           <div className="relative z-10">
             <h2 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
-              Ready to Scale Your Business?
+              Let’s Build and Grow Your Business Together
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90 md:text-xl">
-              Work with experienced professionals who bring years of expertise in 
-              customer service, development, and creative services. Get started today with a free consultation.
+              Work with a team that helps your business move forward.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button

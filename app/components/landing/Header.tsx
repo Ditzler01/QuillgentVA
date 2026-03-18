@@ -13,12 +13,15 @@ const navLinks = [
   { label: "Testimonials", href: "#testimonials" },
 ];
 
-export default function Header() {
+export default function Header()
+{
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href: string) =>
+  {
     const element = document.querySelector(href);
-    if (element) {
+    if (element)
+    {
       element.scrollIntoView({ behavior: "smooth" });
     }
     setMobileMenuOpen(false);
@@ -45,7 +48,7 @@ export default function Header() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => (
             <Button
               key={link.href}
@@ -61,7 +64,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <Button
-            className="hidden bg-[#40929e] text-white hover:bg-[#357d88] md:flex"
+            className="hidden bg-[#40929e] text-white hover:bg-[#357d88] lg:flex"
             onClick={() => scrollToSection("#contact")}
             data-testid="button-header-cta"
           >
@@ -70,7 +73,7 @@ export default function Header() {
           <Button
             size="icon"
             variant="ghost"
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             data-testid="button-mobile-menu"
           >
@@ -80,7 +83,7 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen && (
-        <nav className="flex flex-col gap-2 border-t border-border/50 bg-background p-4 md:hidden">
+        <nav className="flex flex-col gap-2 border-t border-border/50 bg-background p-4 lg:hidden">
           {navLinks.map((link) => (
             <Button
               key={link.href}

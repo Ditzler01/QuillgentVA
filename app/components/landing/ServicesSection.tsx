@@ -4,39 +4,71 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import {
+import
+{
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import {
-  FileText,
+import
+{
   Headphones,
-  PenTool,
-  Database,
   Share2,
   Briefcase,
   ArrowRight,
   Check,
+  Globe,
+  ClipboardList,
+  Palette,
 } from "lucide-react";
 
 const services = [
   {
-    icon: FileText,
+    icon: Globe,
+    title: "Website Development",
+    description:
+      "We build fast, functional, and scalable websites.",
+    details: {
+      overview: "Our websites combine speed, functionality, and scalability to give your business a strong online presence.",
+      features: [
+        "Custom website development",
+        "CMS websites you can easily manage",
+        "High-functionality web platforms",
+        "SEO-ready business websites",
+        "Conversion-focused landing pages"
+      ],
+    },
+  },
+  {
+    icon: Share2,
+    title: "Social Media Management",
+    description:
+      "We help businesses stay active and visible online.",
+    details: {
+      overview: "We manage your social platforms to keep your brand active, engaging, and consistently visible to your audience.",
+      features: [
+        "Content planning",
+        "Post scheduling",
+        "Audience engagement",
+        "Brand growth"
+      ],
+    },
+  },
+  {
+    icon: ClipboardList,
     title: "Administrative Support",
     description:
-      "Email management, scheduling, document preparation, and day-to-day operational tasks handled with precision by experienced virtual assistants.",
+      "Let us handle the tasks that keep your operations organized.",
     details: {
-      overview: "Our administrative support services help streamline your daily operations, allowing you to focus on growing your business.",
+      overview: "We streamline your daily operations by managing essential administrative tasks with accuracy and efficiency.",
       features: [
-        "Email and calendar management",
-        "Document preparation and formatting",
-        "Data entry and organization",
-        "Travel arrangements and booking",
-        "Meeting coordination and minutes",
-        "File management and organization",
+        "Email management",
+        "Scheduling",
+        "Data entry",
+        "CRM updates",
+        "Documentation"
       ],
     },
   },
@@ -44,94 +76,55 @@ const services = [
     icon: Headphones,
     title: "Customer Service & Tech Support",
     description:
-      "Over 2 years of experience handling customer inquiries, technical support for Telco accounts, sales, and collections with professional excellence.",
+      "Description pa dito",
     details: {
-      overview: "With over 2 years of Telco industry experience, we provide exceptional customer service and technical support that keeps your customers satisfied.",
+      overview: "We provide responsive customer care and reliable technical support to ensure smooth communication and problem resolution.",
       features: [
-        "Inbound and outbound call handling",
-        "Technical troubleshooting and support",
-        "Sales and upselling expertise",
-        "Collections and account management",
-        "Live chat and email support",
-        "Customer retention strategies",
+        "Customer inquiries",
+        "Technical support",
+        "Ticket management",
+        "Client communication"
       ],
     },
   },
   {
-    icon: PenTool,
-    title: "Graphic Design & Video Editing",
+    icon: Palette,
+    title: "Creative Services",
     description:
-      "Creative content production including graphic design, video editing, and marketing materials that elevate your brand presence.",
+      "Our team also supports your brand through creative content.",
     details: {
-      overview: "Transform your brand with professional creative services that capture attention and drive engagement across all platforms.",
+      overview: "We craft compelling visuals and multimedia content that strengthen your brand identity and captivate your audience.",
       features: [
-        "Logo and brand identity design",
-        "Social media graphics and templates",
-        "Video editing and production",
-        "Marketing materials and flyers",
-        "Presentation design",
-        "Thumbnail and banner creation",
-      ],
-    },
-  },
-  {
-    icon: Database,
-    title: "Web Development",
-    description:
-      "Full-stack web development with Next.js, React, TypeScript, WordPress, and SEO expertise to build high-performing, responsive websites and applications.",
-    details: {
-      overview: "We build modern, high-performing websites and applications using the latest technologies to help your business thrive online.",
-      features: [
-        "Next.js and React development",
-        "TypeScript for robust applications",
-        "WordPress design and development",
-        "SEO optimization and best practices",
-        "Responsive and mobile-first design",
-        "API integration and backend development",
-      ],
-    },
-  },
-  {
-    icon: Share2,
-    title: "Digital Marketing & SEO",
-    description:
-      "Strategic marketing campaigns, SEO optimization, social media management, and community engagement to boost your online visibility and rankings.",
-    details: {
-      overview: "Grow your online presence with data-driven marketing strategies that increase visibility, engagement, and conversions.",
-      features: [
-        "Search engine optimization (SEO)",
-        "Social media marketing and management",
-        "Content creation and strategy",
-        "Paid advertising campaigns",
-        "Analytics and performance tracking",
-        "Community building and engagement",
+        "Graphic design",
+        "Video editing",
+        "Marketing visuals",
+        "Social media graphics"
       ],
     },
   },
   {
     icon: Briefcase,
-    title: "Real Estate & Sales Support",
+    title: "Digital Marketing",
     description:
-      "Specialized support for real estate operations, sales processes, lead management, and client relationship building.",
+      "We help businesses reach more customers online.",
     details: {
-      overview: "Specialized virtual assistance for real estate professionals, helping you close more deals and manage client relationships effectively.",
+      overview: "Our digital marketing strategies are designed to expand your reach, attract leads, and drive measurable business growth.",
       features: [
-        "Lead generation and qualification",
-        "CRM management and updates",
-        "Property listing management",
-        "Client follow-up and communication",
-        "Transaction coordination",
-        "Market research and analysis",
+        "SEO optimization",
+        "Paid advertising",
+        "Marketing strategy",
+        "Lead generation"
       ],
     },
   },
 ];
 
-export default function ServicesSection() {
+export default function ServicesSection()
+{
   const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
 
   return (
-    <section id="services" className="py-16 md:py-24 lg:py-32">
+    <section id="services" className="bg-muted/30 py-16 md:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-8 xl:px-8">
         <motion.div
           className="mb-12 text-center md:mb-16"
@@ -141,14 +134,13 @@ export default function ServicesSection() {
           transition={{ duration: 0.5 }}
         >
           <span className="mb-4 inline-flex items-center rounded-full bg-[#40929e]/10 px-4 py-1.5 text-sm font-medium text-[#40929e]">
-            Our Services
+            Our Core Services
           </span>
           <h2 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
-            Comprehensive VA Solutions
+            Smart Virtual Services
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            From administrative tasks to strategic support, our virtual
-            assistants are trained to handle it all.
+            Streamlined solutions for modern businesses.
           </p>
         </motion.div>
 
@@ -161,7 +153,7 @@ export default function ServicesSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card 
+              <Card
                 className="group h-full cursor-pointer p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl md:p-8"
                 onClick={() => setSelectedService(service)}
                 data-testid={`card-service-${index}`}
@@ -173,7 +165,7 @@ export default function ServicesSection() {
                   {service.title}
                 </h3>
                 <p className="mb-4 text-justify text-muted-foreground">{service.description}</p>
-                <button 
+                <button
                   className="inline-flex items-center text-sm font-medium text-[#40929e] opacity-0 transition-opacity group-hover:opacity-100"
                   data-testid={`button-learn-more-${index}`}
                 >
@@ -210,9 +202,10 @@ export default function ServicesSection() {
                 </ul>
               </div>
               <div className="mt-6">
-                <Button 
+                <Button
                   className="w-full bg-[#40929e] hover:bg-[#357d87]"
-                  onClick={() => {
+                  onClick={() =>
+                  {
                     setSelectedService(null);
                     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                   }}

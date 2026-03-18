@@ -9,27 +9,28 @@ const steps = [
     icon: MessageSquare,
     title: "Consultation",
     description:
-      "Share your needs and challenges. Whether it's customer service, web development, or marketing, we understand your requirements.",
+      "We learn about your business and your needs.",
   },
   {
     number: "02",
     icon: UserCheck,
-    title: "Match & Onboard",
+    title: "Team Matching",
     description:
-      "We assign the right specialist from our team with expertise in your specific needs, from tech support to creative design.",
+      "We connect you with the right specialists.",
   },
   {
     number: "03",
     icon: Rocket,
-    title: "Deliver Excellence",
+    title: "Execution",
     description:
-      "Our team integrates seamlessly into your workflow, leveraging years of experience to deliver results from day one.",
+      "Our team works alongside you to support your growth.",
   },
 ];
 
-export default function HowItWorks() {
+export default function HowItWorks()
+{
   return (
-    <section id="how-it-works" className="bg-muted/30 py-16 md:py-24 lg:py-32">
+    <section id="how-it-works" className="py-16 md:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 md:px-8 lg:px-8 xl:px-8">
         <motion.div
           className="mb-12 text-center md:mb-16"
