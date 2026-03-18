@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function WhatMakesUsDifferent()
 {
   return (
-    <div className="mx-auto flex flex-col max-w-7xl gap-12 px-6 py-16 
+    <div id="why-us" className="mx-auto flex flex-col max-w-7xl gap-12 px-6 py-16 
                 md:flex-col md:gap-8 md:px-8 md:py-24 
                 lg:grid lg:grid-cols-5 lg:gap-20 lg:px-8 lg:py-32 xl:px-8">
       {/* Text block */}
