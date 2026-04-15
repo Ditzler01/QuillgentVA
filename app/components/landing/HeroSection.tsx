@@ -84,9 +84,10 @@ export default function HeroSection()
         >
           <div className="relative aspect-[4/3] rounded-3xl shadow-2xl">
             <Image
-              src="/images/hero.png"
+              src="/images/Front.png"
               alt="Professional virtual assistant at work"
               fill
+              unoptimized
               className="object-cover rounded-3xl"
               priority
             />

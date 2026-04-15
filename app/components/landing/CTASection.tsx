@@ -3,9 +3,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function CTASection()
 {
+  const router = useRouter();
   const scrollToSection = (href: string) =>
   {
     const element = document.querySelector(href);
@@ -41,7 +43,7 @@ export default function CTASection()
               <Button
                 size="lg"
                 className="bg-white px-8 text-[#40929e] hover:bg-white/90"
-                onClick={() => console.log("Schedule consultation clicked")}
+                onClick={() => router.push("https://calendly.com/quillgent/30min")}
                 data-testid="button-cta-schedule"
               >
                 Schedule Free Consultation

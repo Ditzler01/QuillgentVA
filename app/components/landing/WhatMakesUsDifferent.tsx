@@ -40,7 +40,7 @@ export default function WhatMakesUsDifferent()
       >
         <div className="relative aspect-[4/3] rounded-3xl shadow-2xl">
           <Image
-            src="/images/romie2.jpg"
+            src="/images/2nd Image.png"
             alt="Professional virtual assistant at work"
             fill
             className="object-cover rounded-3xl"
