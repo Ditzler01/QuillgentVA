@@ -7,11 +7,13 @@ import { Linkedin, Twitter, Facebook, Instagram, Send } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const footerLinks = {
-  services: [
-    { label: "Customer Service & Tech Support", href: "#" },
-    { label: "Web Development", href: "#" },
-    { label: "Graphic Design & Video Editing", href: "#" },
-    { label: "Digital Marketing & SEO", href: "#" },
+  quick_links: [
+    { label: "Services", href: "#services" },
+    { label: "How It Works", href: "#how-it-works" },
+    { label: "Why Us", href: "#why-us" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms of Service", href: "#" },
   ],
   company: [
     { label: "About Us", href: "#" },
@@ -73,8 +75,80 @@ export default function Footer() {
   return (
     <footer className="border-t border-border bg-muted/30">
       <div className="mx-auto max-w-7xl px-6 py-12 md:px-8 md:py-16 lg:px-8 lg:py-20 xl:px-8">
-        <div className="grid gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-5 lg:gap-12">
-          <div className="lg:col-span-2">
+        <div className="grid gap-8 grid-cols-2 md:gap-10 lg:gap-12">
+         <div>
+          <h4 className="mb-4 font-semibold text-foreground">Quick links</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 w-80">
+            {/* Left column: first 5 links */}
+            <ul className="space-y-2">
+              {footerLinks.quick_links.slice(0, 4).map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* Right column: last 2 links */}
+            <ul className="space-y-2 text-left mt-2 md:mt-0">
+              {footerLinks.quick_links.slice(4).map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+
+
+          {/* 
+          <div>
+            <h4 className="mb-4 font-semibold text-foreground">Company</h4>
+            <ul className="space-y-3">
+              {footerLinks.company.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="mb-4 font-semibold text-foreground">Resources</h4>
+            <ul className="space-y-3">
+              {footerLinks.resources.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div> */}
+
+          <div>
             <a href="#" className="text-xl font-bold text-foreground">
               <span className="text-[#40929e]">Quill</span>gent
             </a>
@@ -83,7 +157,7 @@ export default function Footer() {
               to help scale your business. Focus on growth, we handle the rest.
             </p>
 
-            <form onSubmit={handleSubscribe} className="mt-6 flex gap-2">
+            {/* <form onSubmit={handleSubscribe} className="mt-6 flex gap-2">
               <Input
                 type="email"
                 placeholder="Enter your email"
@@ -102,9 +176,9 @@ export default function Footer() {
               >
                 <Send className="h-4 w-4" />
               </Button>
-            </form>
+            </form> */}
 
-            <div className="mt-6 flex gap-3">
+            {/* <div className="mt-6 flex gap-3">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -116,66 +190,15 @@ export default function Footer() {
                   <social.icon className="h-5 w-5" />
                 </a>
               ))}
-            </div>
-          </div>
-
-          <div>
-            <h4 className="mb-4 font-semibold text-foreground">Services</h4>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="mb-4 font-semibold text-foreground">Company</h4>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="mb-4 font-semibold text-foreground">Resources</h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            </div> */}
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-border pt-8 md:flex-row">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} Quillgent. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          {/* <div className="flex gap-6">
             <a
               href="#"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -190,7 +213,7 @@ export default function Footer() {
             >
               Terms of Service
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
